@@ -25,10 +25,10 @@ describe('TestTable', () => {
   });
 
   it('should create', async () => {
-    fixture.componentRef.setInput('csvFilePath', '/sample-data/test-table.csv');
+    fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('/sample-data/test-table.csv');
+    const request = httpMock.expectOne('sample-data/test-table.csv');
     request.flush('Team,Wins,Losses\nLions,12,5');
     await fixture.whenStable();
     fixture.detectChanges();
@@ -39,11 +39,11 @@ describe('TestTable', () => {
   });
 
   it('should render image cells as img elements', async () => {
-    fixture.componentRef.setInput('csvFilePath', '/sample-data/test-table.csv');
+    fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('/sample-data/test-table.csv');
-    request.flush('Team,Logo\nLions,/sample-data/logos/lions.png');
+    const request = httpMock.expectOne('sample-data/test-table.csv');
+    request.flush('Team,Logo\nLions,sample-data/logos/lions.png');
     await fixture.whenStable();
     fixture.detectChanges();
 
@@ -51,16 +51,16 @@ describe('TestTable', () => {
     const image = compiled.querySelector('tbody img');
 
     expect(image).not.toBeNull();
-    expect(image?.getAttribute('src')).toBe('/sample-data/logos/lions.png');
+    expect(image?.getAttribute('src')).toBe('sample-data/logos/lions.png');
     expect(image?.getAttribute('alt')).toBe('Logo');
   });
 
   it('should render image headers as img elements', async () => {
-    fixture.componentRef.setInput('csvFilePath', '/sample-data/test-table.csv');
+    fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('/sample-data/test-table.csv');
-    request.flush('Week,/sample-data/logos/buffalo.png\nWeek 0,FIU');
+    const request = httpMock.expectOne('sample-data/test-table.csv');
+    request.flush('Week,sample-data/logos/buffalo.png\nWeek 0,FIU');
     await fixture.whenStable();
     fixture.detectChanges();
 
@@ -68,15 +68,15 @@ describe('TestTable', () => {
     const image = compiled.querySelector('thead img');
 
     expect(image).not.toBeNull();
-    expect(image?.getAttribute('src')).toBe('/sample-data/logos/buffalo.png');
+    expect(image?.getAttribute('src')).toBe('sample-data/logos/buffalo.png');
     expect(image?.getAttribute('alt')).toBe('Column 2');
   });
 
   it('should apply win and loss classes based on cell text', async () => {
-    fixture.componentRef.setInput('csvFilePath', '/sample-data/test-table.csv');
+    fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('/sample-data/test-table.csv');
+    const request = httpMock.expectOne('sample-data/test-table.csv');
     request.flush('Team,Result\nLions,34-20 | W\nBears,17-24 | L');
     await fixture.whenStable();
     fixture.detectChanges();
@@ -89,10 +89,10 @@ describe('TestTable', () => {
   });
 
   it('should highlight rows containing the configured marker', async () => {
-    fixture.componentRef.setInput('csvFilePath', '/sample-data/test-table.csv');
+    fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('/sample-data/test-table.csv');
+    const request = httpMock.expectOne('sample-data/test-table.csv');
     request.flush('Week,Opponent\nWeek 4,Rice\nWeek 5,Notre Dame');
     await fixture.whenStable();
     fixture.detectChanges();

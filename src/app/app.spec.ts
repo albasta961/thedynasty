@@ -7,10 +7,10 @@ describe('App', () => {
   let httpMock: HttpTestingController;
 
   function flushTableRequests(): void {
-    httpMock.expectOne('/sample-data/2026 Records.csv').flush(
+    httpMock.expectOne('sample-data/2026 Records.csv').flush(
       'Rank,Team,Wins\n1,Lions,12'
     );
-    httpMock.expectOne('/sample-data/2026 Schedule v2.csv').flush(
+    httpMock.expectOne('sample-data/2026 Schedule v2.csv').flush(
       'Week,Opponent\n1,Packers'
     );
   }
@@ -44,6 +44,6 @@ describe('App', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('DONGS');
     expect(compiled.textContent).toContain('Week 5');
-    expect(compiled.textContent).toContain('Team Schedule');
+    expect(compiled.textContent).toContain('2026 Schedule');
   });
 });
