@@ -1,0 +1,43 @@
+@if (loading()) {
+  <p>Loading table...</p>
+} @else if (error()) {
+  <p>{{ error() }}</p>
+} @else {
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          @for (header of headers(); track $index) {
+            <th [class.fit-column]="isTightColumn(header)">
+              @if (isImageCell(header)) {
+                <img [src]="header" [alt]="'Column ' + ($index + 1)" />
+              } @else {
+                {{ header }}
+              }
+            </th>
+          }
+        </tr>
+      </thead>
+      <tbody>
+        @for (row of rows(); track $index) {
+          <tr [class.highlighted-row]="isHighlightedRow(row)">
+            @for (cell of row; track $index) {
+              <td
+                [class.fit-column]="isTightColumn(headers()[$index])"
+                [class.loss-cell]="getCellResultClass(cell) === 'loss-cell'"
+                [class.win-cell]="getCellResultClass(cell) === 'win-cell'"
+                [class.bye-cell]="getCellResultClass(cell) === 'bye-cell'"
+              >
+                @if (isImageCell(cell)) {
+                  <img [src]="cell" [alt]="headers()[$index] || 'Table image'" />
+                } @else {
+                  {{ cell }}
+                }
+              </td>
+            }
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+}
