@@ -38,8 +38,9 @@ export class TestTable {
     this.rows.set([]);
 
     try {
+      const cacheBustedCsvPath = this.buildCacheBustedCsvPath(csvFilePath);
       const csvText = await firstValueFrom(
-        this.http.get(csvFilePath, { responseType: 'text' })
+        this.http.get(cacheBustedCsvPath, { responseType: 'text' })
       );
 
       const parsedRows = this.parseCsv(csvText ?? '');
@@ -64,6 +65,11 @@ export class TestTable {
       .map((line) => line.trim())
       .filter((line) => line.length > 0)
       .map((line) => line.split(',').map((value) => value.trim()));
+  }
+
+  private buildCacheBustedCsvPath(csvFilePath: string): string {
+    const separator = csvFilePath.includes('?') ? '&' : '?';
+    return `${csvFilePath}${separator}v=${Date.now()}`;
   }
 
   isImageCell(value: string): boolean {

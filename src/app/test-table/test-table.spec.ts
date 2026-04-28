@@ -24,11 +24,17 @@ describe('TestTable', () => {
     httpMock.verify();
   });
 
+  function expectCsvRequest(path: string) {
+    return httpMock.expectOne(
+      (request) => request.url.startsWith(`${path}?v=`)
+    );
+  }
+
   it('should create', async () => {
     fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('sample-data/test-table.csv');
+    const request = expectCsvRequest('sample-data/test-table.csv');
     request.flush('Team,Wins,Losses\nLions,12,5');
     await fixture.whenStable();
     fixture.detectChanges();
@@ -42,7 +48,7 @@ describe('TestTable', () => {
     fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('sample-data/test-table.csv');
+    const request = expectCsvRequest('sample-data/test-table.csv');
     request.flush('Team,Logo\nLions,sample-data/logos/lions.png');
     await fixture.whenStable();
     fixture.detectChanges();
@@ -59,7 +65,7 @@ describe('TestTable', () => {
     fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('sample-data/test-table.csv');
+    const request = expectCsvRequest('sample-data/test-table.csv');
     request.flush('Week,sample-data/logos/buffalo.png\nWeek 0,FIU');
     await fixture.whenStable();
     fixture.detectChanges();
@@ -76,7 +82,7 @@ describe('TestTable', () => {
     fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('sample-data/test-table.csv');
+    const request = expectCsvRequest('sample-data/test-table.csv');
     request.flush('Team,Result\nLions,34-20 | W\nBears,17-24 | L');
     await fixture.whenStable();
     fixture.detectChanges();
@@ -92,8 +98,8 @@ describe('TestTable', () => {
     fixture.componentRef.setInput('csvFilePath', 'sample-data/test-table.csv');
     fixture.detectChanges();
 
-    const request = httpMock.expectOne('sample-data/test-table.csv');
-    request.flush('Week,Opponent\nWeek 4,Rice\nWeek 5,Notre Dame');
+    const request = expectCsvRequest('sample-data/test-table.csv');
+    request.flush('Week,Opponent\nWeek 7,Rice\nWeek 8,Notre Dame');
     await fixture.whenStable();
     fixture.detectChanges();
 
