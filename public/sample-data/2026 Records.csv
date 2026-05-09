@@ -1,7 +1,7 @@
 Rank,Team,Record (User Games),Opponent
-,sample-data/Logos/Buffalo.png,5-2 (4-1),Hawai'i | W 42-32
-,sample-data/Logos/FIU.png,1-6 (0-4),BYE
-#22,sample-data/Logos/GSU.png,7-1 (4-1),@ Auburn | W 24-23
-,sample-data/Logos/Hawaii.png,3-5 (1-4),@ Buffalo | L 32-42
-,sample-data/Logos/ODU.png,2-5 (2-2),Vanderbilt
-#13,sample-data/Logos/Rice.png,6-1 (2-1),@ Arkansas | W 45-20
+,sample-data/Logos/Buffalo.png,5-2 (4-1),@ #2 Ohio State
+,sample-data/Logos/FIU.png,1-6 (0-4),Penn State
+#19,sample-data/Logos/GSU.png,7-1 (4-1),BYE
+,sample-data/Logos/Hawaii.png,3-5 (1-4),#22 Texas
+,sample-data/Logos/ODU.png,3-5 (2-2),#11 Rice
+#11,sample-data/Logos/Rice.png,6-1 (2-1),@ Old Dominion
