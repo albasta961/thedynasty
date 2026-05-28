@@ -11,7 +11,7 @@ import { firstValueFrom } from 'rxjs';
 export class TestTable {
   private readonly http = inject(HttpClient);
   private readonly tightColumns = ['rank', 'team'];
-  private readonly highlightedRowMarker = 'Week 10';
+  private readonly highlightedRowMarker = 'Week 11';
   private readonly lossMarker = '| l';
   private readonly winMarker = '| w';
   private readonly byeMarker = 'bye';
