@@ -1,7 +1,7 @@
-Rank,Team,Record (User Games),Opponent
-,sample-data/Logos/Buffalo.png,9-4 (4-1),Penn State | W 27-25
-,sample-data/Logos/FIU.png,2-10 (0-4),BYE
-#16,sample-data/Logos/GSU.png,11-2 (4-1),Michigan | W 45-15
-,sample-data/Logos/Hawaii.png,3-9 (1-4),BYE
-,sample-data/Logos/ODU.png,5-7 (2-3),BYE
-#7,sample-data/Logos/Rice.png,10-2 (3-1),#10 Oregon
+Team,Record (User Games)
+sample-data/Logos/Buffalo.png,9-4 (4-1)
+sample-data/Logos/FIU.png,2-10 (0-4)
+sample-data/Logos/GSU.png,11-2 (4-1)
+sample-data/Logos/Hawaii.png,3-9 (1-4)
+sample-data/Logos/ODU.png,5-7 (2-3)
+sample-data/Logos/Rice.png,13-3 (3-1)

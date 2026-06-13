@@ -1,21 +1,21 @@
 Week,sample-data/Logos/Buffalo.png,sample-data/Logos/FIU.png,sample-data/Logos/GSU.png,sample-data/Logos/Hawaii.png,sample-data/Logos/ODU.png,sample-data/Logos/Rice.png
-Week 0,FIU | W 17-12,Buffalo | L 12-17,Old Dominion | W 25-24,Rice | L 14-51,Georgia State | L 24-25,Hawai’i | W 51-14
-Week 1,Georgia State | W 21-14,Hawai’i | L 35-43,Buffalo | L 14-21,FIU | W 43-35,BYE,Indiana | W 15-10
-Week 2,Rice | L 17-33,Old Dominion | L 14-21,Hawai’i | W 41-14,Georgia State | L 14-41,FIU | W 21-14,Buffalo | W 33-17
-Week 3,Old Dominion | W 52-17,FAU | L 21-28,BYE,BYE,Buffalo | L 17-52,BYE
-Week 4,Texas | L 20-24,BYE,Tulane | W 28-10,Old Dominion | L 28-41,Hawai’i | W 41-28,BYE
-Week 5,BYE,Memphis | W 49-14,Penn State | W 24-14,Ohio State | L 0-41,Baylor | L 10-24,Notre Dame | W 10-7
-Week 6,Arizona | W 31-12,Kentucky | L 21-24,Rice | W 14-10,Michigan | W 14-10,Clemson | L 7-24,Georgia State | L 10-14
-Week 7,BYE,Georgia State | L 6-57,FIU | W 57-6,Florida | W 24-21,Notre Dame | L 6-53,Purdue | W 57-10
-Week 8,Hawai’i | W 42-32,BYE,Auburn | W 24-23,Buffalo | L 32-42,Vanderbilt | W 27-26,Arkansas | W 45-20
-Week 9,Ohio State | W 20-17,Penn State | L 7-34,BYE,Texas | L 15-17,Rice | L 7-65,Old Dominion | W 65-7
-Week 10,Michigan | W 14-13,Tulane | L 21-28,Texas A&M | L 0-28,Arizona | L 24-27,Virginia | W 30-27,Baylor | W 45-24
-Week 11,Louisville | L 14-15,Florida State | W 31-21,Kentucky | W 44-21,USC | L 7-35,Purdue | L 21-22,Clemson | W 21-17
-Week 12,Wisconsin | L 21-22,North Carolina | L 7-41,Memphis | W 13-10,Michigan State | L 28-31,BYE,LSU | L 21-24
-Week 13,Maryland | W 17-10,Miami | L 7-33,Texas Tech | W 26-24,BYE,Oklahoma | W 17-14,Houston | W 35-13
-Week 14,BYE,BYE,BYE,BYE,BYE,BYE
-Week 15,BYE,BYE,BYE,BYE,BYE,BYE
-Bowl Week 1,Penn State | W 27-25,BYE,Michigan | W 45-15,BYE,BYE,Oregon
-Bowl Week 2,BYE,BYE,BYE,BYE,BYE,
-Bowl Week 3,BYE,BYE,BYE,BYE,BYE,
-Bowl Week 4,BYE,BYE,BYE,BYE,BYE,
+W0,FIU | W 17-12,Buffalo | L 12-17,Old Dominion | W 25-24,Rice | L 14-51,Georgia State | L 24-25,Hawai’i | W 51-14
+W1,Georgia State | W 21-14,Hawai’i | L 35-43,Buffalo | L 14-21,FIU | W 43-35,BYE,Indiana | W 15-10
+W2,Rice | L 17-33,Old Dominion | L 14-21,Hawai’i | W 41-14,Georgia State | L 14-41,FIU | W 21-14,Buffalo | W 33-17
+W3,Old Dominion | W 52-17,FAU | L 21-28,BYE,BYE,Buffalo | L 17-52,BYE
+W4,Texas | L 20-24,BYE,Tulane | W 28-10,Old Dominion | L 28-41,Hawai’i | W 41-28,BYE
+W5,BYE,Memphis | W 49-14,Penn State | W 24-14,Ohio State | L 0-41,Baylor | L 10-24,Notre Dame | W 10-7
+W6,Arizona | W 31-12,Kentucky | L 21-24,Rice | W 14-10,Michigan | W 14-10,Clemson | L 7-24,Georgia State | L 10-14
+W7,BYE,Georgia State | L 6-57,FIU | W 57-6,Florida | W 24-21,Notre Dame | L 6-53,Purdue | W 57-10
+W8,Hawai’i | W 42-32,BYE,Auburn | W 24-23,Buffalo | L 32-42,Vanderbilt | W 27-26,Arkansas | W 45-20
+W9,Ohio State | W 20-17,Penn State | L 7-34,BYE,Texas | L 15-17,Rice | L 7-65,Old Dominion | W 65-7
+W10,Michigan | W 14-13,Tulane | L 21-28,Texas A&M | L 0-28,Arizona | L 24-27,Virginia | W 30-27,Baylor | W 45-24
+W11,Louisville | L 14-15,Florida State | W 31-21,Kentucky | W 44-21,USC | L 7-35,Purdue | L 21-22,Clemson | W 21-17
+W12,Wisconsin | L 21-22,North Carolina | L 7-41,Memphis | W 13-10,Michigan State | L 28-31,BYE,LSU | L 21-24
+W13,Maryland | W 17-10,Miami | L 7-33,Texas Tech | W 26-24,BYE,Oklahoma | W 17-14,Houston | W 35-13
+W14,BYE,BYE,BYE,BYE,BYE,BYE
+W15,BYE,BYE,BYE,BYE,BYE,BYE
+Bowl W1,Penn State | W 27-25,BYE,Michigan | W 45-15,BYE,BYE,Oregon | W 17-14
+Bowl W2,BYE,BYE,BYE,BYE,BYE,Duke | W 24-17
+Bowl W3,BYE,BYE,BYE,BYE,BYE,LSU | W
+Bowl W4,BYE,BYE,BYE,BYE,BYE,Ohio State | L
