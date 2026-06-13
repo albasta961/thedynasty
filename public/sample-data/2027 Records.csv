@@ -1,7 +1,7 @@
 Rank,Team,Record (User Games),Opponent
-,sample-data/Logos/Buffalo.png,1-0 (1-0),@ #18 Georgia State | W 26-23 (OT)
+#24,sample-data/Logos/Buffalo.png,1-0 (1-0),@ #18 Georgia State | W 26-23 (OT)
 ,sample-data/Logos/FIU.png,0-0 (0-0), #5 Rice
-#16,sample-data/Logos/GSU.png,0-1 (0-1),#24 Buffalo | L 23-26 (OT)
+#18,sample-data/Logos/GSU.png,0-1 (0-1),#24 Buffalo | L 23-26 (OT)
 ,sample-data/Logos/Hawaii.png,0-0 (0-0),@ Old Dominion
 ,sample-data/Logos/ODU.png,0-0 (0-0),Hawaii
-#7,sample-data/Logos/Rice.png,0-0 (0-0),@ FIU
+#5,sample-data/Logos/Rice.png,0-0 (0-0),@ FIU
